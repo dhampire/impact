@@ -1,0 +1,221 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #565656;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.header__fije img,
+.header__juve img {
+    max-width: 280px;
+}
+
+.header__fije {
+    grid-column: 1;
+}
+
+.header__juve {
+    grid-column: 2
+}
+
+.header__impact {
+    grid-column: 1 / span 2
+}
+
+.header__lugar {
+    grid-column: 1 / span 2;
+    line-height: 1.3;
+    font-size: 2rem;
+    color: #06b179;
+    font-weight: bold;
+}
+
+/*wrapper*/
+.wrapper {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.title {
+    color: #181e51;
+    text-align: center;
+    font-size: 2.3rem
+}
+
+.tematicas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 1.5rem;
+}
+
+.title--tematicas {
+    grid-column: 1 / span 4;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0
+}
+
+.tematica__item {
+    font-size: 1.5rem;
+    padding: 1.8rem;
+    text-align: center;
+}
+
+.tematica__item h4 {
+    margin: 0;
+}
+
+.tematica_fin {
+    background: #a5dbaa;
+    color: #1c6836;
+}
+
+.tematica_fin h4 {
+    border-bottom: 1px solid #1c6836;
+    padding-bottom: 1rem
+}
+
+.tematica_ci {
+    background: #a3a5d4;
+    color: #4750aa;
+}
+
+.tematica_ci h4 {
+    border-bottom: 1px solid #4750aa;
+    padding-bottom: 1rem
+}
+
+.tematica_log {
+    background: #ffc698;
+    color: #774927;
+}
+
+.tematica_log h4 {
+    border-bottom: 1px solid #774927;
+    padding-bottom: 1rem
+}
+
+.tematica_tec {
+    background: #f49598;
+    color: #9d1f18;
+}
+
+.tematica_tec h4 {
+    border-bottom: 1px solid #9d1f18;
+    padding-bottom: 1rem
+}
+
+.youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding: 5rem 0;
+    margin: 3rem auto;
+    width: 50%;
+    height: 350px;
+
+}
+
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    align-content: center;
+    padding: 3rem 5rem;
+}
+
+.footer img {
+    max-width: 200px;
+    height: auto;
+    width: 100%
+}
+
+.footer-item {
+    text-align: center;
+}
+
+.footer--title {
+    grid-column: 1 / span 4;
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 90vw;
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .tematicas {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-gap: .5rem;
+        margin: 3rem 0;
+    }
+
+    .title--tematicas {
+        grid-column: 1 / span 2;
+    }
+
+    .header img {
+        width: 100%
+    }
+
+    .title_tematicas {
+        grid-column: 1 / span 2;
+    }
+
+    .tematica__item {
+        padding: 1rem;
+    }
+
+    .youtube {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        padding: 1rem;
+    }
+
+}
