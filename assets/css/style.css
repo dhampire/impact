@@ -17,6 +17,7 @@ h3,
 h4,
 h5,
 h6 {
+    color: #181e51;
     font-family: 'Roboto', sans-serif;
 }
 /*NAVIGATION*/
@@ -31,7 +32,7 @@ h6 {
     margin-bottom: 3rem;
     padding: 0 2rem;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     z-index: 9999;
 }
 	.logo{
@@ -71,7 +72,7 @@ h6 {
 		text-align: center;
 		border-radius: 5px;
 		text-decoration: none;
-		border: none;
+		bodrer: none;
 		font-weight: bold;
 	}
 /* header */
@@ -116,8 +117,9 @@ h6 {
     margin: 0 auto;
 }
 
+
+
 .title {
-    color: #181e51;
     text-align: center;
     font-size: 2.3rem
 }
@@ -205,6 +207,72 @@ h6 {
     height: 100%;
 }
 
+
+
+/* information*/ 
+.info{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+    .info__title{
+        background: #FFEFBA;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        grid-column: 1 / -1;
+        text-align:center;
+
+    }
+    .info__price{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .vip--title{
+        grid-column:span;
+    }
+    .vip--sillas{ 
+        grid-column: 2 / span 2;
+    }
+    .vip--precio{
+        grid-column: 4 / -1;
+    }
+    .vip--color {
+        background: #80c1a3;
+    }
+.precios--set{
+    border-left: 1px dotted white;
+    margin-bottom:1rem;
+    padding-left:1.5rem;
+}
+        
+    .emprendedor--title{
+        grid-column:1 / span 2;
+    }
+    .emprendedor--sillas{ 
+        grid-column: 3 / span;
+    }
+    .emprendedor--precio{
+        grid-column: 4 / -1;
+    }
+        .emprendedor--color{
+           background: #7496c3; 
+        }
+    .estudiantes--title{
+        grid-column:1 / span 2;
+    }
+    .estudiantes--sillas{ 
+        grid-column: 3 / span;
+    }
+    .estudiantes--precio{
+        grid-column: 4 / -1;
+    }
+        .estudiantes--color{
+            background:#cc68a6;
+        }
+
+
+
+/* footer */
 .footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -227,6 +295,14 @@ h6 {
 .footer--title {
     grid-column: 1 / span 4;
 }
+
+@media (max-width: 1024px){
+    .wrapper{
+        width: 90%;
+    }
+}
+
+
 
 @media (max-width: 480px) {
     .wrapper {
