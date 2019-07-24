@@ -21,18 +21,18 @@ h6 {
 }
 /*NAVIGATION*/
 .navigation {
-	display: grid;
-	grid-template-columns: 200px 2fr 1fr;
-	grid-template-rows: auto;
-	box-shadow: 1px 1px 1px 1px rgba(242,242,242,1);
-	padding: 0 2rem;
-	margin-bottom: 3rem;
-	background: white;
-	position: fixed;
-	width: 100vw;
-	justify-items: center;;
-	align-items: center;
-	z-index: 9999;
+    align-items: center;
+    background: white;
+    box-shadow: 1px 1px 1px 1px rgba(242,242,242,1);
+    display: grid;
+    grid-template-columns: 200px 2fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;;
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+    position: fixed;
+    width: 100vw;
+    z-index: 9999;
 }
 	.logo{
 		grid-column: 1;
