@@ -269,8 +269,23 @@ h6 {
         .estudiantes--color{
             background:#cc68a6;
         }
+    .info--set{
+        color: #181e51;
+        padding: 1rem 1.5rem;
+    }
+    .info__place{
+        background:#ff3676;
+        grid-column:1 / span 2;
+    }
+    .info__date{
+        background: #ff7d66;
+        grid-column:3 / span 2;
 
-
+    }
+    .info__hours{
+        background: #d62680;
+        grid-column:5 / span 2;
+    }
 
 /* footer */
 .footer {
@@ -375,4 +390,49 @@ h6 {
 	.fexpo{
 		grid-column: 2;
 	}
+
+/* precios grids*/
+.info__price h3{
+    margin: 0;
+}
+    .vip--title{
+        grid-column: 1/ -1;
+        margin:0;
+        text-align: center;
+        border-bottom:1px dotted white;
+    }
+    .vip--sillas{ 
+        grid-column: 1 / span 3;
+    }
+    .vip--precio{
+        grid-column: 4 / -1;
+    }
+        
+    .emprendedor--title{
+        grid-column:1 / -1;
+        margin:0;
+        text-align: center;
+        border-bottom:1px dotted white;
+    }
+    .emprendedor--sillas{ 
+        grid-column: 1 / span 3;
+    }
+    .emprendedor--precio{
+        grid-column: 4 / -1;
+    }
+    .estudiantes--title{
+        grid-column:1 / -1;
+        margin:0;
+        text-align: center;
+        border-bottom:1px dotted white;
+    }
+    .estudiantes--sillas{ 
+        grid-column: 1 / span 3;
+    }
+    .estudiantes--precio{
+        grid-column: 4 / -1;
+    }
+    .info--set{
+        grid-column: 1 / -1   
+    }
 }
