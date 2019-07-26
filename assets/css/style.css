@@ -318,6 +318,7 @@ h6 {
 @media (max-width: 1024px){
     .wrapper{
         width: 90%;
+        margin: 0 auto;
     }
 }
 
