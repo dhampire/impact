@@ -223,16 +223,16 @@ h6 {
     }
     .info__price{
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
-    .vip--title{
-        grid-column:span;
+    .info--title, .info__place{
+        grid-column:1;
     }
-    .vip--sillas{ 
-        grid-column: 2 / span 2;
+    .info--sillas, .info__hours{ 
+        grid-column: 2 / span 1;
     }
-    .vip--precio{
-        grid-column: 4 / -1;
+    .info--precio, .info__hours{
+        grid-column: 3 / -1;
     }
     .vip--color {
         background: #80c1a3;
@@ -242,28 +242,10 @@ h6 {
     margin-bottom:1rem;
     padding-left:1.5rem;
 }
-        
-    .emprendedor--title{
-        grid-column:1 / span 2;
-    }
-    .emprendedor--sillas{ 
-        grid-column: 3 / span;
-    }
-    .emprendedor--precio{
-        grid-column: 4 / -1;
-    }
         .emprendedor--color{
            background: #7496c3; 
         }
-    .estudiantes--title{
-        grid-column:1 / span 2;
-    }
-    .estudiantes--sillas{ 
-        grid-column: 3 / span;
-    }
-    .estudiantes--precio{
-        grid-column: 4 / -1;
-    }
+
         .estudiantes--color{
             background:#cc68a6;
         }
@@ -273,16 +255,13 @@ h6 {
     }
     .info__place{
         background:#ff3676;
-        grid-column:1 / span 2;
     }
     .info__date{
         background: #ff7d66;
-        grid-column:3 / span 2;
 
     }
     .info__hours{
         background: #d62680;
-        grid-column:5 / span 2;
     }
 .info__price span{
     font-size: .8rem;
@@ -307,6 +286,9 @@ h6 {
     display: grid;
     grid-template-columns:repeat(2, 1fr);
 }
+    .footer__auspiciadores{
+        border-left: 1px solid #181e51;
+    }
 .footer-item {
     text-align: center;
 }
@@ -397,50 +379,24 @@ h6 {
 	}
 
 /* precios grids*/
+.info__price{
+    grid-template-columns:repeat(2, 1fr);
+}
 .info__price h3{
     margin: 0;
 }
-    .vip--title{
+    .info--title, .info__place{
         grid-column: 1/ -1;
         margin:0;
         text-align: center;
         border-bottom:1px dotted white;
     }
-    .vip--sillas{ 
-        grid-column: 1 / span 3;
+    .info--sillas, .info__date{ 
+        grid-column: 1 / 2;
     }
-    .vip--precio{
-        grid-column: 4 / -1;
+    .info--precio, .info__hours{
+        grid-column: 2 / -1;
     }
-        
-    .emprendedor--title{
-        grid-column:1 / -1;
-        margin:0;
-        text-align: center;
-        border-bottom:1px dotted white;
-    }
-    .emprendedor--sillas{ 
-        grid-column: 1 / span 3;
-    }
-    .emprendedor--precio{
-        grid-column: 4 / -1;
-    }
-    .estudiantes--title{
-        grid-column:1 / -1;
-        margin:0;
-        text-align: center;
-        border-bottom:1px dotted white;
-    }
-    .estudiantes--sillas{ 
-        grid-column: 1 / span 3;
-    }
-    .estudiantes--precio{
-        grid-column: 4 / -1;
-    }
-    .info--set{
-        grid-column: 1 / -1   
-    }
-
 
     .header__impact{
         display: none;
@@ -448,5 +404,10 @@ h6 {
     .tematica__item{
         padding:1rem 0;
         font-size:.95rem;
+    }
+
+    .footer__auspiciadores{
+        border-top:1px solid #181e51;
+        border-left: none;
     }
 }
