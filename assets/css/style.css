@@ -35,6 +35,7 @@ h6 {
     position: fixed;
     width: 100%;
     z-index: 9999;
+    top:0;
 }
 	.logo{
 		grid-column: 1;
@@ -115,7 +116,7 @@ h6 {
 /*wrapper*/
 .wrapper {
     width: 1080px;
-    margin: 0 auto;
+    margin: 10rem auto;
 }
 
 
@@ -310,6 +311,7 @@ h6 {
 @media (max-width: 480px) {
     .wrapper {
         width: 90vw;
+        margin: 10rem auto;
         padding: 1rem;
     }
 
